@@ -6,8 +6,9 @@ import os
 name = os.path.splitext(os.path.basename(__file__))[0]
 import sys
 
-sys.path.insert(1, '../scraperrework/scraper')
+sys.path.insert(1, '../scraperrework/scraper/scraper')
 sys.path.insert(1, '../clippy')
+sys.path.insert(1, 'scraperrework/scraper/linkdownloadersite')
 
 import requests
 import time

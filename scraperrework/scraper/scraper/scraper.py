@@ -2,7 +2,7 @@ from selenium import webdriver
 
 import multiprocessing 
 import sys
-sys.path.insert(1, '/home/asher/scraperrework/scraper/scraper')
+sys.path.insert(1, 'scraperrework/scraper/scraper')
 
 import linkdownloadersite
 
@@ -29,11 +29,11 @@ class scraper():
         options.add_argument('--no-sandbox')
         options.page_load_strategy = 'none'
         options.add_argument('--disable-dev-shm-usage')
-        options.add_extension("/home/asher/scraperrework/scraper/scraper/blockerextension.crx")
+        options.add_extension("scraperrework/scraper/scraper/blockerextension.crx")
         options.add_argument('--disable-infobars')
         options.add_argument('--disable-gpu')
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
-        options.binary_location = f"/home/asher/scraperrework/scraper/chrome/chrome-linux64/chrome"
+        options.binary_location = f"scraperrework/scraper/chrome/chrome-linux64/chrome"
 
         self.driver = webdriver.Chrome(options=options)#"driver",options=options)
 
